@@ -2,9 +2,14 @@ h1 {
   color: red; /* atribudo CSS color*/
 }
 h2 {
-    color: blueviolet;
+  color: blueviolet;
 }
 h3 {
-    color: greenyellow;
+  color: greenyellow;
 }
 
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
