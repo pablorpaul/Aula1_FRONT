@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
   color: red; /* atribudo CSS color*/
 }
@@ -12,4 +18,53 @@ h3 {
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: space-between;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+
+}
+
+.menu li{
+  border: 1px solid red;
+}
+
+.borda {
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.container-custom {
+  max-width: 1400px; /* largura maxima */;
+  margin: 0 auto;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  flex-basis: 50%;
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo img{
+  max-width: 200px;
+  height: auto;
+
+}
+
+.fundo-madeira {
+  background-image: url('../imagens/fundomadeira.png');
+  background-size: cover;
+}
+
+.fundo-aleatorio {
+  background-image: url('//picsum.photos/1200/700');
+  background-size: cover;
 }
