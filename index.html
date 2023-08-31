@@ -3,56 +3,82 @@
   <head>
     <title>Titulo da minha pagina</title>
     <meta charset="UTF-8" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
+
   <body>
     <header>
-      <div class="container-custom borda">
-        <div class="logo">
-          <img src="assets/imagens/logo.png" >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="" class="navbar-brand" href=""
+            ><img
+              class="img-fluid"
+              src="assets/imagens/logo.png"
+              style="max-width: 150px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menusite"
+            data-bs-controls="menusite"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="menusite"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="">Inicial</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Contato</a></li>
+              <li class="nav-item"><a class="nav-link" href="">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Perfil</a></li>
+            </ul>
+          </div>
         </div>
-        <nav>
-          <ul class="menu">
-            <li>Inicial</li>
-            <li>Sobre</li>
-            <li>Serviços</li>
-            <li>Contato</li>
-            <li>FAQ</li>
-            <li>Perfil</li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
     <main>
-      <div class="container-custom borda">
-        <div class="linha">
-          <div class="col borda fundo-madeira">
-            <h1>Titulo 1</h1>
-            <h2>Titulo 2</h2>
-            <h3>Titulo 3</h3>
-            <h4>Titulo 4</h4>
-            <h5>Titulo 5</h5>
-            <h6>Titulo 6</h6>
-            <p>Paragrafo com <a href="//google.com.br">link</a></p>
-            <p></p>
-          </div>
-          <div class="col borda fundo-aleatorio">
-            <div class="linha">
-              <div class="col borda">
-                <h2>Coluna da direita</h2>
-              </div>
-              <div class="col borda">
-                <h2>Coluna da direita</h2>
-              </div>
-            </div>
-          </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6 col-sm-3 border">Coluna 1</div>
+          <div class="col-6 col-sm-3 border">Coluna 2</div>
+
+          <!-- Force next columns to break to new line -->
+          <!--<div class="w-100"></div> -->
+
+          <div class="col-6 col-sm-3 border">Coluna 3</div>
+          <div class="col-6 col-sm-3 border">Coluna 4</div>
         </div>
-        <div class="linha">
-          <div class="col borda">
-            <h2>Coluna da direita</h2>
+      </div>
+      <div class="container text-center">
+        <div class="row border">
+          <div class="col-sm border">
+            <a>Texto 1</a></li>
+            <a>Texto 2</a></li>
+            <a>Texto 3</a></li>
+            <a>Texto 4</a></li>
+            <a>Texto 5</a></li>
           </div>
-        </div>
+          <div class="col-sm border">Coluna 2</div>
+          <div class="col-sm border">Coluna 3</div>
+          <!-- Force next columns to break to new line -->
+          <!--<div class="w-100"></div> -->
       </div>
     </main>
 
